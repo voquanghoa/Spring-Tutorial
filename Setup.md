@@ -43,6 +43,7 @@ Git dùng để quản lý mã nguồn, giúp mình có thể lưu mã nguồn r
 ### 6. Visual Studio Code
 
 Đừng nhầm với Visual Studio. Visual Studio là một IDEA siêu mạnh, (tất nhiên cũng siêu nặng) còn Visual Studio Code là một code editor khá nhẹ nhàng với nhiều tính năng tương đối mạnh.
+
 Đây là Visual Studio
 
 ![Visual Studio](https://docs.microsoft.com/en-us/visualstudio/get-started/media/visual-studio-ide.png?view=vs-2017)
