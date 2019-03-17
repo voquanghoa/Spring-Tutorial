@@ -11,6 +11,8 @@ Sau khi cài đặt Java, mình nên cài đặt đường dẫn java vào biế
 
 Maven là phần mềm dùng để quản lý project java từ việc cấu hình dự án đến quản lý các thư viện (dependencies) đến các thao tác build, báo cáo, tài liệu.
 
+![Maven](https://maven.apache.org/images/maven-logo-black-on-white.png)
+
 Download ở đây https://maven.apache.org/download.cgi chọn binary định dạng zip 
 ![Download Maven](Images/maven-download.png)
 
@@ -19,6 +21,8 @@ Sau khi download về, mình giải nén maven ở một nơi nào đó cố đ�
 ### 3. MySql
 
 MySql là hệ quản trị cơ sở dữ liệu phổ biến cho cả window, linux và mac
+
+![MySql](https://dev.mysql.com/doc/workbench/en/images/wb-schema-inspector-tables.png)
 
 Download ở đây https://dev.mysql.com/downloads/mysql/
 
@@ -31,6 +35,8 @@ Download: https://www.jetbrains.com/idea/download/
 ![InteliJ IDEA](https://www.jetbrains.com/idea/img/screenshots/idea_overview_5_1@2x.png)
 
 ### 5. Git
+
+![Git](Images/git.png)
 
 Git dùng để quản lý mã nguồn, giúp mình có thể lưu mã nguồn rồi quậy phá thoải mái.
 
@@ -46,5 +52,15 @@ Còn đây là Visual Studio Code
 ![Visual Studio Code](https://code.visualstudio.com/opengraphimg/opengraph-home.png)
 
 Đôi lúc mình cần sửa vài file mã nguồn, file cấu hình mà không muốn lôi cái InteliJ IDEA ra vì nó hơi mất thời gian thì Visual Studio Code là giải pháp hợp lý. Nói vậy không có nghĩa là xem thường sức mạnh của Visual Studio Code đâu
+
+### 7. Postman
+
+Postman dùng để tạo và gửi những request api, qua đó mình có thể xem api nó hoạt động như thế nào, đã đúng như ý đồ của mình hay chưa. Nhiều tình huống hệ thống phần mềm bị lỗi, Postman có thể cho mình biết nhanh chóng lỗi đó là của server hay client để tập trung xử lý.
+
+Postman cũng giúp mình hiểu các khái niệm của http request được một các rõ ràng và trực quan.
+
+![Postman](https://api.foxycart.com/assets/images/postman_interface.png)
+
+Download https://www.getpostman.com/downloads/
 
 === Hết ===
