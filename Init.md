@@ -44,4 +44,8 @@ Nếu mọi thứ suôn sẽ, web service cũng được khởi chạy tương �
 
 ![IntelliJ IDEA](Images/spring-9.png)
 
+Giờ đây, IntelliJ cũng tự thiết lập cấu hình chạy dự án, trên thanh công cụ, ta có thể bấm nút Start để khởi chạy, Stop để tắt dịch vụ....
+
+![IntelliJ IDEA](Images/spring-11.png)
+
 Như vậy là mọi thứ đã sẵn sàng để tiếp tục những bài tiếp theo.
