@@ -103,6 +103,8 @@ public class BookController {
 }
 ```
 
+Chú ý sửa tên package cho đúng.
+
 Chạy dịch vụ web, dùng Postman để test, kết quả nhận được
 
 ![Postman](Images/controller-2.png)
@@ -127,6 +129,6 @@ Chạy dịch vụ web, dùng Postman để test, kết quả nhận được
 - @PathVariable
 - @RequestBody
 
-4. Viết controller tương tự cho `Category`, `Author`
+4. Viết controller tương tự cho `Category`, `Author` (Chú ý, tránh copy code từ BookController)
 
 
