@@ -1,4 +1,5 @@
-# Database phần I
+# Database phần I - Cài đặt, sử dụng nhanh
+
 
 ## 1. Cấu hình MySQL
 
@@ -185,6 +186,3 @@ Kết quả
 2. Trong phần `extends CrudRepository<Book, Integer>` thì `Integer` là gì, tại sao ở đây là `Integer`
 3. CrudRepository và BookRepository là gì và nó có ý nghĩa gì trong ứng dụng
 4. Thực hiện implement Model, Repository và Controller cho Category, Publisher
-5. Thêm thuộc tính `price` và thêm vào Repository phương thức tìm kiếm sách có giá trong phạm vi `min` đến `max`
-6. Thay đổi router `/find` để nhận vào một query `q` có thể tìm kiếm book có `name` hoặc `author` chứa query `q`
-7. Thay đổi router GET "" để nhận vào các optional parametter String `q`, String `order`, String orderType="ASC", thay đổi response dựa theo params.
