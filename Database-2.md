@@ -186,6 +186,16 @@ public interface AuthorRepository extends CrudRepository<Author, Integer> {
 
 @Transactional đảm bảo việc cập nhật (sửa/xóa) thành công mà không bị một thao tác khác xen ngang. Đối với một số trường hợp, đây là annotation phải có để cập nhật dữ liệu.
 
+## Tài liệu tham khảo thêm
+
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+https://o7planning.org/vi/11661/huong-dan-spring-boot-jpa-va-spring-transaction
+https://www.journaldev.com/17034/spring-data-jpa
+https://www.petrikainulainen.net/spring-data-jpa-tutorial/
+
+
+## Bài tập
+
 1. Thêm thuộc tính `price` và thêm vào Repository phương thức tìm kiếm sách có giá trong phạm vi `min` đến `max`
 2. Thay đổi router `/find` để nhận vào một query `q` có thể tìm kiếm book có `name` query `q`
 3. Thay đổi router GET "" để nhận vào các optional parametter String `q`, String `order`, String orderType="ASC", thay đổi response dựa theo params.
