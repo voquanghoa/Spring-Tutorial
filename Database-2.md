@@ -89,33 +89,32 @@ Kết quả
 
 Khi đặt tên một hàm trong repository bắt đầu với `find`, `query`, `read`, `get`, `count` và tiếp theo bởi `by` và danh sách từ khóa điều kiện
 
-|Keyword|Sample|JPQL Snippet|
+|Từ khóa|Ý nghĩa|Minh họa bằng sql|
 |--- |--- |--- |
-|And|findByLastnameAndFirstname|...where x.lastname = ?1 and x.firstname = ?2|
-|Or|findByLastnameOrFirstname|...where x.lastname = ?1 or x.firstname = ?2|
-|Is, Equals|findByFirstnameEquals|...where x.firstname = ?1|
-|Between|findByStartDateBetween|...where x.startDate between ?1 and ?|
-|LessThan|findByAgeLessThan|...where x.age < ?1|
-|LessThanEqual|findByAgeLessThanEqual|...where x.age <= ?1|
-|GreaterThan|findByAgeGreaterThan|...where x.age > ?1|
-|GreaterThanEqual|findByAgeGreaterThanEqual|...where x.age >= ?1|
-|After|findByStartDateAfter|...where x.startDate > ?1|
-|Before|findByStartDateBefore|...where x.startDate < ?1|
-|IsNull|findByAgeIsNull|...where x.age is null|
-|IsNotNull, NotNull|findByAge(Is)NotNull|...where x.age not null|
-|Like|findByFirstnameLike|...where x.firstname like ?1|
-|NotLike|findByFirstnameNotLike|...where x.firstname not like ?1|
-|StartingWith|findByFirstnameStartingWith|...where x.firstname like ?1 (parameter bound with appended %)|
-|EndingWith|findByFirstnameEndingWith|...where x.firstname like ?1 (parameter bound with prepended %)|
-|Containing|findByFirstnameContaining|...where x.firstname like ?1 (parameter bound wrapped in %)|
-|OrderBy|findByAgeOrderByLastnameDesc|...where x.age = ?1 order by x.lastname desc|
-|Not|findByLastnameNot|...where x.lastname <> ?1|
-|In|findByAgeIn(Collection ages)|...where x.age in ?1|
-|NotIn|findByAgeNotIn(Collection ages)|...where x.age not in ?1|
-|True|findByActiveTrue()|...where x.active = true|
-|False|findByActiveFalse()|...where x.active = false|
-|IgnoreCase|findByFirstnameIgnoreCase|...where UPPER(x.firstame) = UPPER(?1)|
-
+|And|Kết hợp AND hai điều kiện|...where lastname = ?1 and firstname = ?2|
+|Or|Kết hợp OR hai điều kiện|...where lastname = ?1 or firstname = ?2|
+|Is, Equals|Kiểm tra dữ liệu phải bằng|...where name = ?1|
+|Between|Kiểm tra dữ liệu trong phạm vi|...where startDate between ?1 and ?|
+|LessThan|Dữ liệu nhỏ hơn|...where year < ?1|
+|LessThanEqual|Dữ liệu nhỏ hơn hoặc bằng|...where year <= ?1|
+|GreaterThan|Dữ liệu lớn hơn|...where year > ?1|
+|GreaterThanEqual|Dữ liệu lớn hơn hoặc bằng|...where year >= ?1|
+|After|Dữ liệu ngày tháng phải sau|...where startDate > ?1|
+|Before|Dữ liệu ngày tháng phải trước|...where startDate < ?1|
+|IsNull|Dữ liệu là null|...where name is null|
+|IsNotNull, NotNull|Dữ liệu khác null|...where name not null|
+|Like|Dữ liệu string hợp pattern|...where name like ?1|
+|NotLike|Dữ liệu string không hợp pattern|...where name not like ?1|
+|StartingWith|Dữ liệu string bắt đầu với|...where name like ?1|
+|EndingWith|Dữ liệu string kết thúc với|...where name like ?1|
+|Containing|Dữ liệu string chứa|...where name like ?1|
+|OrderBy|Sắp xếp kết quả trả về theo|...where year = ?1 order by name desc|
+|Not|Phủ định điều kiện|...where name <> ?1|
+|In|Dữ liệu thuộc danh sách|...where year in ?1|
+|NotIn|Dữ liệu không thuộc danh sách|...where year not in ?1|
+|True|Dữ liệu là true|...where valid = true|
+|False|Dữ liệu là false|...where valid = false|
+|IgnoreCase|Không kiểm tra chữ hoa thường|...where UPPER(name) = UPPER(?1)|
 
 Ví dụ
 
@@ -126,15 +125,17 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface AuthorRepository extends CrudRepository<Author, Integer> {
-    List<Author> findByNameContaining(String name);
+    List<Author> findByNameContainingIgnoreCase(String name);
     List<Author> findByNameOrEmail(String name, String email);
     List<Author> findByNameContainingOrEmailContaining(String name, String email);
 }
 ```
 
+Bằng cách sử dụng tên hàm, thư viện sẽ generate câu lệnh sql phù hợp.
+
 ### Sử dụng Query
 
-Ta viết lệnh sql để thực hiện việc query
+Ta chỉ định sql để thực hiện việc query thay vì để thư viện generate dựa theo tên hàm như trên.
 
 ```java
 import com.voquanghoa.bookstore.models.Author;
@@ -182,6 +183,8 @@ public interface AuthorRepository extends CrudRepository<Author, Integer> {
     void updateEmailById(int id, String newEmail);
 }
 ```
+
+@Transactional đảm bảo việc cập nhật (sửa/xóa) thành công mà không bị một thao tác khác xen ngang. Đối với một số trường hợp, đây là annotation phải có để cập nhật dữ liệu.
 
 1. Thêm thuộc tính `price` và thêm vào Repository phương thức tìm kiếm sách có giá trong phạm vi `min` đến `max`
 2. Thay đổi router `/find` để nhận vào một query `q` có thể tìm kiếm book có `name` query `q`
