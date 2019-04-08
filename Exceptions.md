@@ -148,6 +148,7 @@ Kết quả:
 ![Error handling](Images/sql-24.png)
 
 Http Response Code = 404
+
 Http Response Body:
 ```json
 {
