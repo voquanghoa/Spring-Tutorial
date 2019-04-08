@@ -2,7 +2,8 @@
 
 Xem:
 
-- [Phần 1](Security.md)
+- [Phần 1](Security-1.md)
+- [Phần 3](Security-3.md)
 
 ## Quy định router với Security
 
