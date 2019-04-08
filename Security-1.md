@@ -1,11 +1,9 @@
-# Security
+# Security phần 1
 
-## Mục tiêu topic:
+Xem:
 
-- Setup security với
-    - Lưu trữ thông tin người dùng
-    - Authentication người dùng với JWT
-    - Quy định một số api bắt buộc đăng nhập với quyền hạn
+- [Phần 2](Security-2.md)
+- [Phần 3](Security-3.md)
 
 ## Tạo model.
 
