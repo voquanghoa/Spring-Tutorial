@@ -1,5 +1,10 @@
 # Database phần 3 - Các dữ liệu quan hệ
 
+Xem
+
+- [Cài đặt, sử dụng nhanh](Database-1.md)
+- [Tùy biến, Query](Database-2.md)
+
 ## Quan hệ Nhiều - Một
 
 Giả sử ta có lớp `Book` và lớp `Author` và ta có mối quan hệ `Nhiều book` thuộc về `Một Author`, khi đó ta thiết lập mối quan hệ `@ManyToOne` từ lớp `Book` tới lớp `Author`.

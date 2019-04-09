@@ -1,5 +1,9 @@
 # Database phần I - Cài đặt, sử dụng nhanh
 
+Xem 
+
+- [Tùy biến, Query](Database-2.md)
+- [Dữ liệu quan hệ](Database-3.md)
 
 ## 1. Cấu hình MySQL
 

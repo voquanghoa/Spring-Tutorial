@@ -1,5 +1,10 @@
 # Database phần 2 - Tùy biến, Query
 
+Xem
+
+- [Cài đặt, sử dụng nhanh](Database-1.md)
+- [Dữ liệu quan hệ](Database-3.md)
+
 ## 1. Tùy cột trong bảng dữ liệu
 
 Giả sử ta có model như sau

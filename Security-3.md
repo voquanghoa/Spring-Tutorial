@@ -1,9 +1,10 @@
-# Security phần 3
+# Security phần 3 - JWT Authentication
 
 Xem:
 
 - [Phần 1](Security-1.md)
 - [Phần 2](Security-2.md)
+- [Phần 4](Security-4.md)
 
 ## Setup JWT
 

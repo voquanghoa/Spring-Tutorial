@@ -1,9 +1,10 @@
-# Security phần 1
+# Security phần 1 - Chuẩn bị
 
 Xem:
 
 - [Phần 2](Security-2.md)
 - [Phần 3](Security-3.md)
+- [Phần 4](Security-4.md)
 
 ## Tạo model.
 
