@@ -1,11 +1,5 @@
 # Security phần 1 - Chuẩn bị
 
-Xem:
-
-- [Phần 2](Security-2.md)
-- [Phần 3](Security-3.md)
-- [Phần 4](Security-4.md)
-
 ## Tạo model.
 
 Giả sử rằng, ta cần có một hệ thống dữ liệu người dùng, mỗi người dùng có thể mang các quyền hạn khác nhau bao gồm:
@@ -178,5 +172,11 @@ public class DataSeedingListener implements ApplicationListener<ContextRefreshed
     }
 }
 ```
+
+Xem:
+
+- [Phần 2](Security-2.md)
+- [Phần 3](Security-3.md)
+- [Phần 4](Security-4.md)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

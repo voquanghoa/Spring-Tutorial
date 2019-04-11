@@ -1,10 +1,5 @@
 # Database phần 3 - Các dữ liệu quan hệ
 
-Xem
-
-- [Cài đặt, sử dụng nhanh](Database-1.md)
-- [Tùy biến, Query](Database-2.md)
-
 ## Quan hệ Nhiều - Một
 
 Giả sử ta có lớp `Book` và lớp `Author` và ta có mối quan hệ `Nhiều book` thuộc về `Một Author`, khi đó ta thiết lập mối quan hệ `@ManyToOne` từ lớp `Book` tới lớp `Author`.
@@ -257,6 +252,11 @@ public class Author {
 - Bằng cách sử dụng các annontation như @ManyToOne, ta mô tả quan hệ giữa các entities
 - Khi ta lưu một giá entity, spring sẽ tự động gán giá trị khóa chính cho các khóa ngoại
 - Khi query một entity, spring có thể lấy entity có quan hệ đã lưu trước đó
+
+Xem
+
+- [Cài đặt, sử dụng nhanh](Database-1.md)
+- [Tùy biến, Query](Database-2.md)
 
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

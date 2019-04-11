@@ -1,10 +1,5 @@
 # Security phần 3 - JWT Authentication
 
-Xem:
-
-- [Phần 1](Security-1.md)
-- [Phần 2](Security-2.md)
-- [Phần 4](Security-4.md)
 
 ## Setup JWT
 
@@ -485,5 +480,13 @@ public class AuthenticationController {
 Sử dụng token nhận về ở trên, ta truy cập api bị khóa ở phần trước
 
 ![Security](Images/sql-28.png)
+
+
+
+Xem:
+
+- [Phần 1](Security-1.md)
+- [Phần 2](Security-2.md)
+- [Phần 4](Security-4.md)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

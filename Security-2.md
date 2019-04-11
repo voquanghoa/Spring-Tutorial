@@ -1,10 +1,5 @@
 # Security phần 2 - Cấu hình router
 
-Xem:
-
-- [Phần 1](Security-1.md)
-- [Phần 3](Security-3.md)
-- [Phần 4](Security-4.md)
 
 ## Quy định router với Security
 
@@ -60,5 +55,12 @@ Có thể access router `/api/auth`
 Với router còn lại thì sẽ bị lỗi 403
 
 ![Security](Images/sql-26.png)
+
+
+Xem:
+
+- [Phần 1](Security-1.md)
+- [Phần 3](Security-3.md)
+- [Phần 4](Security-4.md)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

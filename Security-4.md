@@ -1,10 +1,5 @@
 # Security phần 4 - Phân quyền
 
-Xem:
-
-- [Phần 1](Security-1.md)
-- [Phần 2](Security-2.md)
-- [Phần 3](Security-3.md)
 
 Ở [Phần 2](Security-2.md) ta đã có thể quy định một router `/api/books` bắt buộc phải truy cập được nhưng làm thế nào để cùng một router đó:
 
@@ -70,5 +65,12 @@ Tham khảo thêm
     - https://www.baeldung.com/spring-security-method-security
     - https://docs.spring.io/spring-security/site/docs/4.2.12.BUILD-SNAPSHOT/apidocs/org/springframework/security/access/annotation/Secured.html
 
+
+
+Xem:
+
+- [Phần 1](Security-1.md)
+- [Phần 2](Security-2.md)
+- [Phần 3](Security-3.md)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

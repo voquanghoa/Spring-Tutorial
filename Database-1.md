@@ -1,10 +1,5 @@
 # Database phần I - Cài đặt, sử dụng nhanh
 
-Xem 
-
-- [Tùy biến, Query](Database-2.md)
-- [Dữ liệu quan hệ](Database-3.md)
-
 ## 1. Cấu hình MySQL
 
 Để kết nối với cơ sở dữ liệu MySQL từ Spring Boot, đảm bảo rằng MySQL đã được cài đặt và hoạt động bình thường.
@@ -190,5 +185,10 @@ Kết quả
 2. Trong phần `extends CrudRepository<Book, Integer>` thì `Integer` là gì, tại sao ở đây là `Integer`
 3. CrudRepository và BookRepository là gì và nó có ý nghĩa gì trong ứng dụng
 4. Thực hiện implement Model, Repository và Controller cho Category, Publisher
+
+Xem 
+
+- [Tùy biến, Query](Database-2.md)
+- [Dữ liệu quan hệ](Database-3.md)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)
