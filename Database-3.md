@@ -257,3 +257,6 @@ public class Author {
 - Bằng cách sử dụng các annontation như @ManyToOne, ta mô tả quan hệ giữa các entities
 - Khi ta lưu một giá entity, spring sẽ tự động gán giá trị khóa chính cho các khóa ngoại
 - Khi query một entity, spring có thể lấy entity có quan hệ đã lưu trước đó
+
+
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

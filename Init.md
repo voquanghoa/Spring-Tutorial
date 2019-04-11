@@ -49,3 +49,5 @@ Giờ đây, IntelliJ cũng tự thiết lập cấu hình chạy dự án, trê
 ![IntelliJ IDEA](Images/spring-11.png)
 
 Như vậy là mọi thứ đã sẵn sàng để tiếp tục những bài tiếp theo.
+
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

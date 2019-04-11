@@ -38,3 +38,5 @@ public class Book {
 Chạy lại web, kiểm tra mọi thứ vẫn hoạt động ổn.
 
 Sửa tương tự với những class model đang có.
+
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

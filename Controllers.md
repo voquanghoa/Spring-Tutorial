@@ -131,4 +131,6 @@ Chạy dịch vụ web, dùng Postman để test, kết quả nhận được
 
 4. Viết controller tương tự cho `Category`, `Author` (Chú ý, tránh copy code từ BookController)
 
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)
+
 

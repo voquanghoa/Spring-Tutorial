@@ -190,3 +190,5 @@ Kết quả
 2. Trong phần `extends CrudRepository<Book, Integer>` thì `Integer` là gì, tại sao ở đây là `Integer`
 3. CrudRepository và BookRepository là gì và nó có ý nghĩa gì trong ứng dụng
 4. Thực hiện implement Model, Repository và Controller cho Category, Publisher
+
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)

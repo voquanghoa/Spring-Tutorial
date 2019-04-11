@@ -204,3 +204,5 @@ https://www.petrikainulainen.net/spring-data-jpa-tutorial/
 1. Thêm thuộc tính `price` và thêm vào Repository phương thức tìm kiếm sách có giá trong phạm vi `min` đến `max`
 2. Thay đổi router `/find` để nhận vào một query `q` có thể tìm kiếm book có `name` query `q`
 3. Thay đổi router GET "" để nhận vào các optional parametter String `q`, String `order`, String orderType="ASC", thay đổi response dựa theo params.
+
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)
