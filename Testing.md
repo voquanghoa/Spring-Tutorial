@@ -311,3 +311,7 @@ public class BookControllerTest {
     }
 }
 ```
+
+Kết quả
+
+![Testing](Images/testing-4.png)
