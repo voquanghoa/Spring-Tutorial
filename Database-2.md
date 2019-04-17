@@ -55,7 +55,7 @@ Khai báo các quan hệ (Sẽ nghiên cứu kỹ ở phần sau)
 Ở phần trước, ta đã biết cách khai báo một repository như sau
 
 ```java
-public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
 }
 ```
 
@@ -74,7 +74,7 @@ Những hàm mà một `authorRepository` cung cấp:
 Ngoài ra, ta có thể khai báo thêm các method với tên theo quy tắc và danh sách tham số phù hợp, framework sẽ đi implement giùm. Ví dụ
 
 ```java
-public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
     List<Author> findByNameContaining(String name);
 }
 ```
@@ -120,11 +120,11 @@ Ví dụ
 
 ```java
 import com.voquanghoa.bookstore.models.Author;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
     List<Author> findByNameContainingIgnoreCase(String name);
     List<Author> findByNameOrEmail(String name, String email);
     List<Author> findByNameContainingOrEmailContaining(String name, String email);
@@ -140,11 +140,11 @@ Ta chỉ định sql để thực hiện việc query thay vì để thư viện
 ```java
 import com.voquanghoa.bookstore.models.Author;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
     @Query("select u from Author u where email = ?1")
     List<Author> findByEmailAddress(String emailAddress);
 }
@@ -153,7 +153,7 @@ public interface AuthorRepository extends CrudRepository<Author, Integer> {
 Ở đây `?1` là giá trị sẽ được thay thế bởi tham số `emailAddress`, hoặc một cách tường minh hơn, giá trị tham số hàm có thể được điền bằng cách dùng tên
 
 ```java
-public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
     @Query("select u from Author u where email = :emailAddress")
     List<Author> findByEmailAddress(String emailAddress);
 }
@@ -167,10 +167,10 @@ Ta có thể cập nhật dữ liệu với thao tác UPDATE/DELETE bằng query
 import com.voquanghoa.bookstore.models.Author;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-public interface AuthorRepository extends CrudRepository<Author, Integer> {
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
 
     @Transactional
     @Modifying

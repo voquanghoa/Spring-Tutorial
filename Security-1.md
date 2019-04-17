@@ -95,9 +95,9 @@ Ngoài ra, ta cũng có repository tương ứng của 2 model này
 
 ```java
 import com.voquanghoa.bookstore.models.Role;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface RoleRepository extends CrudRepository<Role, Integer> {
+public interface RoleRepository extends JpaRepository<Role, Integer> {
 
     Role findByName(String name);
 }
@@ -105,11 +105,11 @@ public interface RoleRepository extends CrudRepository<Role, Integer> {
 
 ```java
 import com.voquanghoa.bookstore.models.User;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface UserRepository extends CrudRepository<User, Integer>{
+public interface UserRepository extends JpaRepository<User, Integer>{
 
     User findByUsername(String username);
 }

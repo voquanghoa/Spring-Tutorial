@@ -90,9 +90,9 @@ Nội dung
 
 ```java
 import com.voquanghoa.bookstore.models.Book;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BookRepository extends CrudRepository<Book, Integer> {
+public interface BookRepository extends JpaRepository<Book, Integer> {
 }
 ```
 
@@ -152,15 +152,15 @@ Khởi chạy dịch vụ web, thực hiện các request bằng postman, dữ l
 
 ### Thêm thao tác vào repository
 
-Trên đây, ta mới chỉ sử dụng các method có sẵn từ interface `CrudRepository` là `save`, `findById`, `deleteById`, `findAll`. Ngoài ra ta cũng có thể thêm các phương thức tùy biến khác:
+Trên đây, ta mới chỉ sử dụng các method có sẵn từ interface `JpaRepository` như `save`, `findById`, `deleteById`, `findAll`. Ngoài ra ta cũng có thể thêm các phương thức tùy biến khác:
 
 Ví dụ: Tìm kiếm sách với tên
 
 ```java
 import com.voquanghoa.bookstore.models.Book;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BookRepository extends CrudRepository<Book, Integer> {
+public interface BookRepository extends JpaRepository<Book, Integer> {
     Iterable<Book> findByNameContaining(String pattern);
 }
 
@@ -182,8 +182,8 @@ Kết quả
 ## 4. Câu hỏi và bài tập
 
 1. Chỉ thị @Id và @GeneratedValue có ý nghĩa gì trong ví dụ trên
-2. Trong phần `extends CrudRepository<Book, Integer>` thì `Integer` là gì, tại sao ở đây là `Integer`
-3. CrudRepository và BookRepository là gì và nó có ý nghĩa gì trong ứng dụng
+2. Trong phần `extends JpaRepository<Book, Integer>` thì `Integer` là gì, tại sao ở đây là `Integer`
+3. JpaRepository và BookRepository là gì và nó có ý nghĩa gì trong ứng dụng
 4. Thực hiện implement Model, Repository và Controller cho Category, Publisher
 
 Xem 

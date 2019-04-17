@@ -8,3 +8,4 @@ Author Vo Quang Hoa
 ## 5. [Connect database](Database-1.md)
 ## 6. [Exceptions handling](Exceptions.md)
 ## 7. [Security](Security-1.md)
+## 8. [Testing](Testing.md)
