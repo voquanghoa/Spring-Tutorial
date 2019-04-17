@@ -286,8 +286,10 @@ public class BookControllerTest {
                 .contentType(MediaType.APPLICATION_JSON).content(json))
                 .andExpect(status().isOk());
 
-        assertTrue(bookRepository.findById(book2.getId()).isPresent());
-        assertEquals(bookRepository.findById(book2.getId()).get().getName(), "Math");
+        Optional<Book> book = bookRepository.findById(book2.getId());
+
+        assertTrue(book.isPresent());
+        assertEquals(book.get().getName(), "Math");
     }
 
     @Test
