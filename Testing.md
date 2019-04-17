@@ -160,10 +160,7 @@ protected void configure(HttpSecurity http) throws Exception {
             .anyRequest()
             .authenticated();
 
-    http
-            .addFilterBefore(authenticationTokenFilterBean(), UsernamePasswordAuthenticationFilter.class);
-
-}
+    .....
 ```
 POM.xml
 
