@@ -1,7 +1,12 @@
 # Testing
 
-## 1. Tạo một database mới tên là `bookstore-test`
-## 2. Tạo profile test bằng cách copy file `application.properties` thành `application-test.properties`
+## 1. Khởi tạo database:
+
+Mở MySqlWorkbench tạo một database mới tên là `bookstore-test`.
+
+## 2. Tạo profile test 
+
+Copy file `application.properties` thành `application-test.properties`
 
 ![Testing](Images/testing-1.png)
 
