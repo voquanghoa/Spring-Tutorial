@@ -6,7 +6,7 @@
 
 Mở file `pom.xml`
 
-![Heroku](Images/deploy-5.png)
+![Heroku](Images/deploy-6.png)
 
 Thêm dòng `<finalName>bookstore</finalName>` để chỉ định tên package. Khi đó, nếu ta chạy lệnh `mvn clean install` thì ta sẽ nhận được file `bookstore.jar` trong thư mục `target`.
 
