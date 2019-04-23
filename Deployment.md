@@ -47,6 +47,9 @@ Ta sẽ sử dụng hệ database `postgress` trên heroku với một số quy 
 @Table(name = "users")
 ```
 
+![Heroku](Images/deploy-10.png)
+
+
 Ta cũng cần add dependency là thư viện postgresql vào file `pom.xml`
 
 ```xml
@@ -55,9 +58,6 @@ Ta cũng cần add dependency là thư viện postgresql vào file `pom.xml`
   <artifactId>postgresql</artifactId>
 </dependency>
 ```
-
-![Heroku](Images/deploy-10.png)
-
 
 ## Heroku
 
