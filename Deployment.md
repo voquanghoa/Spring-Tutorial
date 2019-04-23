@@ -107,7 +107,8 @@ Ta có thể dùng lệnh để xem cấu trúc database, thực hiện vài l�
 
 # Xem thêm
 
-- https://devcenter.heroku.com/articles/heroku-postgresql#using-the-cli
-- https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+- [https://devcenter.heroku.com/articles/heroku-postgresql#using-the-cli](https://devcenter.heroku.com/articles/heroku-postgresql#using-the-cli)
+- [https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+](https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)
