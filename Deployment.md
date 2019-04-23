@@ -61,11 +61,13 @@ Ta cũng cần add dependency là thư viện postgresql vào file `pom.xml`
 
 ## Heroku
 
-Truy cập trang https://heroku.com đăng ký một tài khoản miễn phí với một username và password.
+Truy cập trang [https://heroku.com](https://heroku.com) đăng ký một tài khoản miễn phí và có được username và password.
 
-Tải tại và cài đặt Heroku CLI https://toolbelt.heroku.com
+Tải và cài đặt Heroku CLI tại [https://toolbelt.heroku.com](https://toolbelt.heroku.com)
 
-Trên command line, ta chạy lệnh `heroku login`, đăng nhập tài khoản với username/password.
+Trên command line, ta chạy lệnh `heroku login`, đăng nhập tài khoản đã đăng ký
+
+![Heroku](Images/heroku-login.png)
 
 ### Tạo dự án heroku
 
@@ -87,6 +89,8 @@ Việc deploy lên heroku có thể gặp nhiều một số tình huống lỗi
 
 - Xem log
 
+![Heroku](Images/heroku-log.png)
+
 Xem log là cách dễ nhất để biết vấn đề đang bị là gì, ta có thể xem log bằng lệnh `heroku logs --tail`. Lệnh này sẽ lấy log liên tục từ server và hiển thị ra màn hình, để kết thúc, ta bấm Ctrl + C.
 
 - Check database
@@ -106,4 +110,4 @@ Ta có thể dùng lệnh để xem cấu trúc database, thực hiện vài l�
 - https://devcenter.heroku.com/articles/heroku-postgresql#using-the-cli
 - https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
 
-[Trang chủ](https://voquanghoa.g
+[Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)
