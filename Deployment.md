@@ -97,6 +97,10 @@ Ta có thể dùng lệnh để xem cấu trúc database, thực hiện vài l�
 
 Để kết thúc, gõ `\q`
 
+- Dùng trang chủ heroku
+
+Đăng nhập trên trang chủ https://dashboard.heroku.com/apps để xem tình trạng app.
+
 # Xem thêm
 
 - https://devcenter.heroku.com/articles/heroku-postgresql#using-the-cli
