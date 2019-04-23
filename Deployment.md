@@ -103,7 +103,7 @@ Ta có thể dùng lệnh để xem cấu trúc database, thực hiện vài l�
 
 - Dùng trang chủ heroku
 
-Đăng nhập trên trang chủ https://dashboard.heroku.com/apps để xem tình trạng app.
+Đăng nhập trên trang chủ https://dashboard.heroku.com/apps để xem tình trạng app và có thể điều chỉnh nếu cần thiết. 
 
 # Xem thêm
 
