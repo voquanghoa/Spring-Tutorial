@@ -9,3 +9,4 @@ Author Vo Quang Hoa
 ## 6. [Exceptions handling](Exceptions.md)
 ## 7. [Security](Security-1.md)
 ## 8. [Testing](Testing.md)
+## 9. [Deploy lên heroku](Deployment.md)
