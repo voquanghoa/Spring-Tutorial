@@ -155,7 +155,7 @@ public void post(@RequestBody Book book){
 }
 ```
 
-![Validation](Images/Validation-1.png)
+![Validation](Images/validation-1.png)
 
 Do đó, ta cần thêm annotation `@Valid` để dữ liệu phải được validate trước khi thực hiện.
 
