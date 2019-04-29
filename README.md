@@ -11,4 +11,5 @@ Author Vo Quang Hoa
 ## 8. [Testing](Testing.md)
 ## 9. [Validation](Validation.md)
 ## 10. [Sử dụng converter](Converter.md)
-## 11. [Deploy lên heroku](Deployment.md)
+## 11. [Swagger](Swagger.md)
+## 12. [Deploy lên heroku](Deployment.md)
