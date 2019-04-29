@@ -47,10 +47,10 @@ Chạy ứng dụng, ta sẽ nhận được
 
 ![http://localhost:8080/v2/api-docs](http://localhost:8080/v2/api-docs)
 
-![Swagger](Images/Swagger-1.png)
+![Swagger](Images/swagger-1.png)
 
 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-![Swagger](Images/Swagger-2.png)
+![Swagger](Images/swagger-2.png)
 
 [Trang chủ](https://voquanghoa.github.io/Spring-Tutorial/)
